@@ -8,3 +8,12 @@ Examples (input -> output)
 6, "I"     -> "IIIIII"
 5, "Hello" -> "HelloHelloHelloHelloHello"
 */
+
+function repeatStr(n, s) {
+  if (n <= 0) return s;
+  let returnedString = '';
+  for (let i = 0; i < n; i++) {
+    returnedString += s;
+  }
+  return returnedString;
+}
